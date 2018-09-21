@@ -6,8 +6,11 @@
   "scripts": {
     "serve": "http-server ./",
     "webpack": "webpack",
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run webpack -- --mode production",
-    "dev": "npm run webpack -- --mode development"
+    "dev": "npm run webpack -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",
+    "dev:debug": "npm run debug -- --mode development"
   },
   "repository": {
     "type": "git",
