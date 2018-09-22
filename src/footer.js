@@ -1,5 +1,4 @@
-const top = "top";
-const bottom = "bottom";
+const top = "Top";
+const bottom = "Bottom";
 
-exports.top = top;
-exports.bottom = bottom;
+export { top, bottom };
