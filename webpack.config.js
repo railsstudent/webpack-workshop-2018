@@ -8,9 +8,7 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
     {
       mode,
       module: {
-        rules: [
-          { test: /\.(png|gif|jpe?g)/, use: ["url-loader"]}
-        ]
+        rules: [{ test: /\.(png|gif|jpe?g)/, use: "url-loader" }]
       },
       output: {
         filename: "bundle.js"
