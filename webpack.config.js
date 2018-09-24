@@ -9,7 +9,13 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
       mode,
       module: {
         rules: [
-          { test: /\.(png|gif|jpe?g)/, use: ["url-loader"]}
+          { test: /\.(png|gif|jpe?g)/, use: [{ 
+              loader: "url-loader",
+              options: { 
+                limit: 5000 
+              } 
+            }]
+          }
         ]
       },
       output: {
