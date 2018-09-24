@@ -4,7 +4,7 @@
   "description": "Learning resources for the webpack academy workshop series for 2018",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server ./",
+    "serve": "http-server ./dist -p 9876",
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
