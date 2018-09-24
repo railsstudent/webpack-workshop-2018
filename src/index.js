@@ -9,8 +9,6 @@ import imageUrl from "./webpack-logo.jpg";
 import "./footer.css";
 import "./button.css";
 
-import "./foo.ts";
-
 const button = makeButton("Yay! A first button");
 button.style = makeColorStyle("cyan");
 
